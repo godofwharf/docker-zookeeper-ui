@@ -8,6 +8,6 @@ then
       exit 1
 fi
 
-sed 's/__ZKSERVER__/$ZKSERVER/' /config.cfg.template > /zkui/target/config.cfg
+sed "s/__ZKSERVER__/$ZKSERVER/" /config.cfg.template > /zkui/target/config.cfg
 
 java -jar /zkui/target/zkui-2.0-SNAPSHOT-jar-with-dependencies.jar
