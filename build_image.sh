@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build --rm=true -t medined/docker-zookeeper-ui .
+docker build --rm=true -t godofwharf/docker-zookeeper-ui .

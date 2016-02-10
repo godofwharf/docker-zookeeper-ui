@@ -4,6 +4,7 @@ serverPort=9090
 zkServer=__ZKSERVER__
 #Http path of the repository.
 scmRepo=http://myserver.com/@rev1=
+https=false
 #Path appended to the repo url.
 scmRepoPath=//appconfig.txt
 #if set to true then userSet is used for authentication, else ldap authentication is used.
@@ -25,3 +26,4 @@ jdbcPwd=manager
 #jdbcPwd=manager
 loginMessage=Please login using admin/manager or appconfig/appconfig.
 sessionTimeout=300
+zkSessionTimeout=3

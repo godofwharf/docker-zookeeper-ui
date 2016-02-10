@@ -1,7 +1,7 @@
 FROM medined/docker-java-oracle7
-MAINTAINER David Medinets <david.medinets@gmail.com>
+MAINTAINER Guruprasad Sridharan <guruprasad.sridharan@gmail.com>
 
-RUN apt-get install -y git maven 
+RUN apt-get update && apt-get install -y git maven 
 RUN git clone https://github.com/DeemOpen/zkui.git
 RUN cd /zkui && mvn clean install
 

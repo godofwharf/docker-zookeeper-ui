@@ -1,0 +1,11 @@
+zookeeper:
+  image: wurstmeister/zookeeper
+  ports:
+    - "2181:2181"
+zookeeper-ui:
+  image: godofwharf/docker-zookeeper-ui
+  ports:
+    - "9090:9090"
+  links:
+    - "zookeeper:zk"
+  command: zk:2181

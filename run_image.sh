@@ -26,5 +26,5 @@ URL="http://$CURRENT_IP:$HOST_PORT/"
 IMAGE_NAME="zookeeper-ui-for-$(echo $ZOOKEEPER_ENSEMBLE | sed 's/[\.:]/_/g')"
 
 echo "Connect to the Zookeeper Web Application using $URL"
-IMAGE_ID=$(docker run --name="$IMAGE_NAME" -d -p $HOST_PORT:9090 -t medined/docker-zookeeper-ui "$ZOOKEEPER_ENSEMBLE")
+IMAGE_ID=$(docker run --name="$IMAGE_NAME" -d -p $HOST_PORT:9090 -t godofwharf/docker-zookeeper-ui "$ZOOKEEPER_ENSEMBLE")
 
